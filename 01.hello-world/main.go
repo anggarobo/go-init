@@ -9,4 +9,5 @@ func main() {
 
 	fmt.Println("Hello World")
 	fmt.Printf("Hi, My Name is Angga, I'm learning %s and %s programming language!\n", lang1, lang2)
+	fmt.Println("My current skills:", lang1, lang2 + "!")
 }
