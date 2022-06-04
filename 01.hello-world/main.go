@@ -23,9 +23,15 @@ func main() {
 	_ = "Belajar Marketing"
 	platform, _ := "web", "mobile"
 
+	// variable declaration using keyword 'new'
+	database := new(string)
+	*database = "MySQL"
+
 	fmt.Println("Hello World")
 	fmt.Printf("Hi, My Name is Angga, I'm learning %s and %s programming language!\n", lang1, lang2)
 	fmt.Println("My current skills :", lang1, lang2 + "!")
 	fmt.Printf("And also I study %s and %s!\n", goFramework, jsFramework)
 	fmt.Println("I've been working on a project using", *frontend, " and ", *backend, "for a", platform)
+	fmt.Printf("Variable declaration with new (addres) : %p\n", database)
+	fmt.Printf("Variable declaration with new (value) : %s\n", *database)
 }
