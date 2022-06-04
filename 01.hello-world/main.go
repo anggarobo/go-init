@@ -18,9 +18,14 @@ func main() {
 	var frontend, backend *string
 	frontend, backend = &jsFramework, &goFramework
 
+	// reserved variable ( _ )
+	_ = "Belajar Bisnis"
+	_ = "Belajar Marketing"
+	platform, _ := "web", "mobile"
+
 	fmt.Println("Hello World")
 	fmt.Printf("Hi, My Name is Angga, I'm learning %s and %s programming language!\n", lang1, lang2)
 	fmt.Println("My current skills :", lang1, lang2 + "!")
 	fmt.Printf("And also I study %s and %s!\n", goFramework, jsFramework)
-	fmt.Println("I've been working on a project using", *frontend, " and ", *backend)
+	fmt.Println("I've been working on a project using", *frontend, " and ", *backend, "for a", platform)
 }
