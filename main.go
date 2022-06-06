@@ -63,21 +63,8 @@ func main() {
 	var message = `Package fmt implements formatted I/O with functions analogous to C's printf and scanf. 
 	The format 'verbs' are derived from C's but are simpler.`
 	fmt.Println(message)
-	
-	// => nil and zero value (default value of data type)
-	/* 
-	nil isn't data type, but a value. A variable whose value is nil means that it has an empty value.
-	- string's zero value => ""
-	- boolean's zero value => false
-	- numeric's zero value => 0
-	- decimal's zero value => 0.0
 
-	nil can't be used on primitive data types, but the data types below are those that can be assigned a value of nil:
-	- pointer
-	- function data type
-	- slice
-	- map
-	- channel
-	- interface or interface{}
-	*/
+	// constant
+	const pi = 3.14
+	fmt.Println(pi)
 }

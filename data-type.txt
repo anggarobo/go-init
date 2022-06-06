@@ -14,3 +14,17 @@ int32   ==> -2147483648 - 2147483647
 int64   ==> -9223372036854775808 - 9223372036854775807
 int     ==> same as int32 or int64 (depending on value)
 rune    ==> same as int32
+
+nil isn't data type, but a value. A variable whose value is nil means that it has an empty value.
+- string's zero value => ""
+- boolean's zero value => false
+- numeric's zero value => 0
+- decimal's zero value => 0.0
+
+nil can't be used on primitive data types, but the data types below are those that can be assigned a value of nil:
+- pointer
+- function data type
+- slice
+- map
+- channel
+- interface or interface{}
