@@ -67,4 +67,8 @@ func main() {
 	// constant
 	const pi = 3.14
 	fmt.Println(pi)
+
+	// operator 
+	var circleCircumference = 3.14*(7*2)
+	fmt.Println(circleCircumference)
 }
