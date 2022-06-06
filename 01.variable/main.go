@@ -48,5 +48,10 @@ func main() {
 	positiveNumber2 = 255 */
 
 	fmt.Printf("%d is a positive number\n", positiveNumber)
-	fmt.Printf("%d is a negative number", negativeNumber)
+	fmt.Printf("%d is a negative number\n", negativeNumber)
+
+	// => decimal num``eric
+	var rad = 2.34
+	var decimalNum = 3.14
+	fmt.Printf("area of circle where the radius is %.2f = %.2f", rad, decimalNum*rad*rad)
 }
