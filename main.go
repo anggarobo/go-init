@@ -68,7 +68,22 @@ func main() {
 	const pi = 3.14
 	fmt.Println(pi)
 
-	// operator 
+	// arithmetics operators 
 	var circleCircumference = 3.14*(7*2)
 	fmt.Println(circleCircumference)
+
+	// comparison operators
+	var val = (((45 - 20) + 5) * 20 - 50) / 20
+	var isEqual = val == 30
+	fmt.Printf("value of %d (%t) \n", val, isEqual)
+
+	// logical operators
+	var isLoading = false
+	var length = 4
+	var isEmpty = !isLoading && length > 0
+	if isEmpty {
+		fmt.Printf("done, length = %d\n", length)
+	} else {
+		fmt.Printf("Please wait... loading is %t, length = %d", isLoading, length)
+	}
 }
