@@ -13,7 +13,7 @@ func main() {
 	fmt.Printf("Hi, My Name is Angga, I'm learning %s and %s programming language!\n", lang1, lang2)
 	fmt.Println("My current skills :", lang1, lang2 + "!")
 
-	// type interface
+	// type inference
 	goFramework := "echo"
 	var jsFramework = "react.js"
 	goFramework = "gin gonic"
@@ -81,9 +81,23 @@ func main() {
 	var isLoading = false
 	var length = 4
 	var isEmpty = !isLoading && length > 0
+
+	/* conditional statement */
+	// if else
 	if isEmpty {
 		fmt.Printf("done, length = %d\n", length)
 	} else {
 		fmt.Printf("Please wait... loading is %t, length = %d", isLoading, length)
+	}
+
+	// variable temporary if else
+	var point = 8239.5
+
+	if grade := point / 100 ; grade >= 100 {
+		fmt.Printf("%.1f%s perfect!\n", grade, "%")
+	} else if grade >= 70 {
+		fmt.Printf("%.1f%s good!\n", grade, "%")
+	} else {
+		fmt.Printf("%.1f%s not bad\n", grade, "%")
 	}
 }
