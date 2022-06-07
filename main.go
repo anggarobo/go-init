@@ -100,4 +100,16 @@ func main() {
 	} else {
 		fmt.Printf("%.1f%s not bad\n", grade, "%")
 	}
+
+	// switch case
+	var value = 6
+
+	switch {
+	case value >= 8:
+		fmt.Println("Perfect")
+	case ( value < 8 ) && ( value >= 6 ):
+		fmt.Println("Awesome")
+	default:
+		fmt.Println("You need to learn more")
+	}
 }
